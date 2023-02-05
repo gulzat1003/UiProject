@@ -12,6 +12,12 @@ public class $AdminHomePage extends BasePageUsers{
     @FindBy(xpath = "//span[contains(text(),'A. Ali')]")
     public WebElement nameOfUser;
 
+    @FindBy(xpath = "(//a[contains(text(),'Users')])[1]")
+    public WebElement usersBtn;
+
+    @FindBy(xpath = "(//a[contains(text(),'Add user')])[1]")
+    public WebElement addUserBtn;
+
 }
 
 //span[contains(text(),'A. Ali')]

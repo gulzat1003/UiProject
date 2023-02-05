@@ -19,6 +19,7 @@ public class UserTest extends BaseUserTest {
     public void loginWithValidDates(){
         loginPage.fillUpUsernameAndPassword("alibinali", "alibinali");
         assertEquals(adminHomePage.nameOfUser.getText(),"A. ALI");
+        assertEquals(adminHomePage.statusOfUsers.getText(), "ADMINISTRATOR");
 
 
     }
