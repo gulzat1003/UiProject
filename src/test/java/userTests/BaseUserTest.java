@@ -30,8 +30,8 @@ public abstract class BaseUserTest {
         userCourseList = new UserCourseList();
 
     }
-    @AfterClass
-    public void tearDown(){
-        Driver.closeDriver();
-    }
+//    @AfterClass
+//    public void tearDown(){
+//        Driver.closeDriver();
+//    }
 }

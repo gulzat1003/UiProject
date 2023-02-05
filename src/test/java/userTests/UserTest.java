@@ -5,6 +5,8 @@ import com.talentLMS.UI.users.BasePageUsers;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import static org.testng.Assert.*;
+
 public class UserTest extends BaseUserTest {
 
 
@@ -15,6 +17,9 @@ public class UserTest extends BaseUserTest {
 
     @Test(description = "Verify that user can login with valid dates")
     public void loginWithValidDates(){
+        loginPage.fillUpUsernameAndPassword("alibinali", "alibinali");
+        assertEquals(adminHomePage.nameOfUser.getText(),"A. ALI");
+
 
     }
 
